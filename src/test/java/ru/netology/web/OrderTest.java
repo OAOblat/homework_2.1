@@ -12,7 +12,7 @@ class OrderTest {
     void shouldHappyPath() {
         open("http://localhost:9999");
         SelenideElement form = $(".form_theme_alfa-on-white");
-        form.$("[data-test-id=name] input").setValue("Иванов Иван");
+        form.$("[data-test-id=name] input").setValue("Иванов-Москвинин Иван");
         form.$("[data-test-id=phone] input").setValue("+79210000000");
         form.$("[data-test-id=agreement]").click();
         form.$(".button_theme_alfa-on-white").click();
